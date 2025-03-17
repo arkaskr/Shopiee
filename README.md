@@ -1,2 +1,2 @@
 # Shopiee
-A Ecommerce site Using React to sell your items
+An Ecommerce site Using React to sell your items
