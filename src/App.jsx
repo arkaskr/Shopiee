@@ -10,10 +10,14 @@ import Login from './Pages/Login'
 import Placeorder from './Pages/Placeorder'
 import Orders from './Pages/Orders'
 
+import Navbar from './Components/Navbar'
+
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+
+      <Navbar/>
 
         <Routes>
             <Route path='/' element={<Home/>} />
