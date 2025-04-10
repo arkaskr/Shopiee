@@ -2,6 +2,8 @@ import React from 'react'
 import Banner from '../Components/Banner'
 import LatestCollection from '../Components/LatestCollection'
 import BestSellers from '../Components/BestSellers'
+import OurPolicy from '../Components/OurPolicy'
+import NewsletterBox from '../Components/NewsletterBox'
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
       <Banner/>
       <LatestCollection/>
       <BestSellers/>
+      <OurPolicy/>
+      <NewsletterBox/>
     </div>
   )
 }
