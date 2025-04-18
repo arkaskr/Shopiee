@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { products } from "../Assets/frontend_assets/assets";
+import { products } from "../Assets/assets";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 

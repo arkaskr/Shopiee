@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../Context/ShopContext'
-import { assets } from '../Assets/frontend_assets/assets';
+import { assets } from '../Assets/assets';
 import Title from '../Components/Title';
 import ProductItem from '../Components/ProductItem';
 

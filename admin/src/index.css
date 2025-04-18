@@ -2,8 +2,9 @@
 
 @import "tailwindcss";
 
-a.active hr{
-    display: block;
+.active{
+    background-color: rgba(159, 230, 188, 0.366);
+    border-color: rgb(37, 86, 33);
 }
 
 *{
