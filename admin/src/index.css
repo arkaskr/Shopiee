@@ -20,3 +20,9 @@
   ::-webkit-scrollbar{
     display: none;
  }
+
+ select,input,textarea{
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 4px;
+    outline-color: rgb(37, 86, 33);
+ }

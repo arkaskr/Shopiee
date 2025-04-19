@@ -19,10 +19,6 @@ const addProduct = async (req, res) => {
                 return result.secure_url
             })
         )
-        console.log("REQ.BODY:", req.body);
-        console.log("RAW sizes:", req.body.sizes);
-
-
 
         const productData = {
             name,
@@ -35,12 +31,11 @@ const addProduct = async (req, res) => {
             bestseller: bestseller === "true" ? true : false,
             date: Date.now()
         }
-        console.log(productData);
 
         const product=new productModel(productData);
         await product.save()
 
-        res.json({sucess:true,message:"Product added"})
+        res.json({success:true,message:"Product added"})
 
     } catch (error) {
         console.log(error);
