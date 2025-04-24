@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 const Navbar = () => {
 
   const [visible,setVisible]=useState(false);
+  const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
   const {showSearch,setShowSearch,getCartCount,navigate,token,setToken,setCartItems}=useContext(ShopContext);
 
   const logout=()=>{
@@ -46,10 +47,10 @@ const Navbar = () => {
       <div className='flex items-center gap-6'>
         <img onClick={()=>setShowSearch(!showSearch)} src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
 
-        <div onClick={()=>token?null: navigate('/login')} className='group relative'>
+        <div onClick={()=>token?token?setProfileDropdownOpen(!profileDropdownOpen): navigate('/login')} className='group relative'>
           <img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" />
           {/* ------ Dropdown menu ------ */}
-          {token && 
+          {token && profileDropdownOpen &&
           <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
             <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
               <p className='cursor-pointer hover:text-black'>My Profile</p>
