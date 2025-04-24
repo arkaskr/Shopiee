@@ -47,7 +47,7 @@ const Navbar = () => {
       <div className='flex items-center gap-6'>
         <img onClick={()=>setShowSearch(!showSearch)} src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
 
-        <div onClick={()=>token?token?setProfileDropdownOpen(!profileDropdownOpen): navigate('/login')} className='group relative'>
+        <div onClick={()=>token?setProfileDropdownOpen(!profileDropdownOpen): navigate('/login')} className='group relative'>
           <img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" />
           {/* ------ Dropdown menu ------ */}
           {token && profileDropdownOpen &&
